@@ -18,6 +18,8 @@ const contactRouter = require('./Router/contactRouter.js');
 const Wishlist = require('./Router/wishlistRouter.js');
 const cvFormRouter = require('./Router/cvFormRouter.js');
 const counterRoutes = require('./Router/counterRouter.js');
+const roboGeniusRouter = require('./Router/roboGeniusRouter.js');
+
 
 
 //calling middlewares
@@ -53,6 +55,9 @@ app.use('/',courseRoutes);
 
 // Counter Management
 app.use('/',counterRoutes);
+
+// Counter Management
+app.use('/',roboGeniusRouter);
 
 // Use the job application routes
 app.use('/cvForm', cvFormRouter);
